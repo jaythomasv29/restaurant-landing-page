@@ -1,0 +1,91 @@
+* {
+    /* css reset */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    /* properties of background image */
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.5)),url(images/kitchen.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-nav {
+    float: right; /* alignment of nav*/
+    list-style: none;
+    margin-top:30px
+}
+.main-nav li {
+    /* list item properties */
+    display: inline-block;
+}
+
+.main-nav li a {
+    /* link anchor tag properties */
+    color: white;
+    text-decoration: none;
+    padding: 5px 25px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+.main-nav li.active a {
+    border: 1px solid white;
+}
+
+.main-nav li a:hover {
+    opacity: 0.4;
+    border: 1px solid rgba(255,255,255,0.5);
+    transition: opacity 1s;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    float: left; /* alignment of logo*/
+}
+
+.hero {
+    width: 100%;
+    position: absolute;
+    color: white;
+    margin-left: 0px;
+    margin-top: 0px;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero h1, p {
+    text-align: center;
+}
+
+.btns {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.button {
+    color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.1); 
+}
+
+button:hover {
+    opacity: 0.4;
+    border: 1px solid rgba(255,255,255,0.5);
+    transition: opacity 1s;
+}
